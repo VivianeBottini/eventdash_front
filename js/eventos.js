@@ -5,7 +5,7 @@ function logout() {
 }
 
 /* function filtrar() {
-    fetch("http://localhost:8080/buscarevento/" +
+    fetch(API+"/buscarevento/" +
         document.getElementById("txtinicio").value +
         "/" + document.getElementById("txtfim").value)
         .then(res => res.json())

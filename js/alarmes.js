@@ -6,7 +6,7 @@ function logout() {
 
 
 /*function filtrarcontagem(){
-        fetch("http://localhost:8080/contagem/" + 
+        fetch(API+"/contagem/" + 
         document.getElementById("txtinicio").value + 
         "/" + document.getElementById("txtfim").value)
                 .then(res => res.json())

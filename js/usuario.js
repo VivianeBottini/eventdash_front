@@ -33,7 +33,7 @@ function logar() {
     };
 
 
-    fetch("http://localhost:8080/login", conteudo)
+    fetch(API+"/login", conteudo)
         .then(res => res.json())
         .then(res => {
             localStorage.setItem("usuariologado", JSON.stringify(res));
