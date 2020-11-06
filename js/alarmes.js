@@ -4,19 +4,17 @@ function logout() {
     window.location = "index.html";
 }
 
-
-/*function filtrarcontagem(){
-        fetch(API+"/contagem/" + 
+function filtrarcontagem(){
+        fetch(API+"/contador/" + 
         document.getElementById("txtinicio").value + 
         "/" + document.getElementById("txtfim").value)
                 .then(res => res.json())
                 .then(res=> montartabelacontagem(res));
     }
 
-    
     function montartabelacontagem(lista){
             var tabela =
-            "<table border='1' align='center' width='80%' cellspacing='2'>" +
+            "<table class='table' border='1' align='center' width='80%' cellspacing='2'>" +
             "<tr>" +
             "<th>Alarme</th>"+
             "<th>Quantidade de alarmes no Período</th>"+
@@ -28,5 +26,5 @@ function logout() {
                 "<td>" + lista[cont+1] + "</td></tr>";
             }
     tabela+="</table>";
-            document.getElementById("resultado").innerHTML=tabela;
-        } */
+            document.getElementById("resultadoalarme").innerHTML=tabela;
+        } 

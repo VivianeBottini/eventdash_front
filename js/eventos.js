@@ -4,8 +4,8 @@ function logout() {
     window.location = "index.html";
 }
 
-/* function filtrar() {
-    fetch(API+"/buscarevento/" +
+function filtrar() {
+    fetch(API+"/data/" +
         document.getElementById("txtinicio").value +
         "/" + document.getElementById("txtfim").value)
         .then(res => res.json())
@@ -14,11 +14,11 @@ function logout() {
 
 function montartabela(lista) {
     var tabela =
-        "<table border='1' align='center' width='80%' cellspacing='2'>" +
+        "<table class='table' border='1' align='center' width='80%' cellspacing='2'>" +
         "<tr>" +
-        "<th>Data</th>" +
-        "<th>Alarme</th>" +
-        "<th>Equipamento</th>" +
+        "<th>Data do Evento</th>" +
+        "<th>Tipo de Alarme</th>" +
+        "<th>Hostname do Equipamento</th>" +
         "</tr>";
     for (cont = 0; cont < lista.length; cont++) {
         tabela +=
@@ -28,5 +28,5 @@ function montartabela(lista) {
             "<td>" + lista[cont].equipamento.hostname + "</td></tr>";
     }
     tabela += "</table>";
-    document.getElementById("resultado").innerHTML = tabela;
-} */
+    document.getElementById("resultadoevt").innerHTML =tabela;
+} 
